@@ -24,7 +24,7 @@ discount = 0
 
 # If it is the first or second day of the week (zero indexed) and the subtotal is
 # greater then $50 apply a 10% discount to the subtotal.
-if (3 > todays_date > 0) and subtotal > 50:
+if 3 > todays_date > 0 and subtotal >= 50:
     discount = subtotal * .10
     subtotal -= discount
     print(f"Discount amount: {discount:.2f}")
