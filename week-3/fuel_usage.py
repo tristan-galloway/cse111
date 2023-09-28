@@ -7,8 +7,6 @@ Purpose: Check your understanding of writing your own functions with parameters 
 
 """
 
-import math
-
 def main():
     # Get an odometer value in U.S. miles from the user.
     start_miles = int(input("Enter the first odometer reading (miles): "))
