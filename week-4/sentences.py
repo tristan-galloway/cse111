@@ -42,8 +42,9 @@ def make_sentence(quantity, tense):
     noun = get_noun(quantity)
     verb = get_verb(quantity, tense)
     prepositional_phrase = get_prepositional_phrase(quantity)
+    prepositional_phrase_2 = get_prepositional_phrase(quantity)
 
-    sentance = print(f"{determiner.capitalize()} {noun} {verb} {prepositional_phrase[0]} {prepositional_phrase[1]} {prepositional_phrase[2]}.")
+    sentance = print(f"{determiner.capitalize()} {noun} {verb} {prepositional_phrase} {prepositional_phrase_2}.")
     return sentance
 
 def get_determiner(quantity):
@@ -179,7 +180,7 @@ def get_prepositional_phrase(quantity):
     determiner = get_determiner(quantity)
     noun = get_noun(quantity)
 
-    prepositional_phrase = preposition, determiner, noun
+    prepositional_phrase = preposition + " " + determiner + " " +  noun
     return prepositional_phrase
 # Call main to run the program.
 main()
