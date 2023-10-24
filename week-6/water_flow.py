@@ -47,7 +47,7 @@ def pressure_loss_from_fittings(fluid_velocity, quantity_fittings):
     pipe fittings.
     """
 
-    loss = -0.04 * WATER_DENSITY * fluid_velocity ** 2 * quantity_fittings / 2000
+    loss = -0.04 * WATER_DENSITY * fluid_velocity**2 * quantity_fittings / 2000
 
     return loss
 
