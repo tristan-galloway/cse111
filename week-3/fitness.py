@@ -11,7 +11,6 @@ Purpose: Boost your understanding of writing your own functions with parameters 
 # used to compute a person's age.
 from datetime import datetime
 
-
 def main():
     # Get the user's gender, birthdate, height, and weight.
     gender = input("Please enter your gender (M or F): ").upper()
@@ -60,7 +59,6 @@ def compute_age(birth_str):
         years -= 1
 
     return years
-
 
 def kg_from_lb(pounds):
     """Convert a mass in pounds to kilograms.
