@@ -1,7 +1,7 @@
 """
 
 Name: Tristan Galloway
-Date: 10/31/2023
+Date: 11/3/2023
 Purpose: Prove that you can write a Python program that uses a dictionary and lists.
 Resources: N/A
 
@@ -13,7 +13,7 @@ def main():
     chemical_formula = input("Enter a chemical formula for a molecule: ")
 
     # Get the mass of a chemical sample in grams from the user.
-    chemical_mass = int(input("Enter the mass in grams: "))
+    chemical_mass = float(input("Enter the mass of the sample in grams: "))
 
     # Call the make_periodic_table function and
     # store the periodic table in a variable.
@@ -23,18 +23,20 @@ def main():
     # chemical formula given by the user to a compound
     # list that stores element symbols and the quantity
     # of atoms of each element in the molecule.
-    parse_formula(chemical_formula, periodic_table_dict)
+    symbol_quantity_list = parse_formula(chemical_formula, periodic_table_dict)
 
     # Call the compute_molar_mass function to compute the
     # molar mass of the molecule from the compound list.
-    compute_molar_mass(symbol_quantity_list, periodic_table_dict)
+    molar_mass = tg_compute_molar_mass(symbol_quantity_list, periodic_table_dict)
 
     # Compute the number of moles in the sample.
+    number_of_moles = chemical_mass / molar_mass
 
     # Print the molar mass.
+    print(f"{round(molar_mass, 5)} grams/mole")
 
     # Print the number of moles.
-
+    print(f"{round(number_of_moles, 5)} moles")
 
 
 def tg_make_periodic_table():
@@ -140,7 +142,7 @@ def tg_make_periodic_table():
         "Zr": ["Zirconium", 91.224]
     }
 
-    return periodic_table_list
+    return periodic_table_dict
 
 # Indexes for inner lists in the periodic table
 NAME_INDEX = 0
@@ -151,7 +153,7 @@ SYMBOL_INDEX = 0
 QUANTITY_INDEX = 1
  
 
-def compute_molar_mass(symbol_quantity_list, periodic_table_dict):
+def tg_compute_molar_mass(symbol_quantity_list, periodic_table_dict):
     """Compute and return the total molar mass of all the
     elements listed in symbol_quantity_list.
 
@@ -171,15 +173,18 @@ def compute_molar_mass(symbol_quantity_list, periodic_table_dict):
     1.00794 * 2 + 15.9994 * 1
     18.01528
     """
+    # Initialize total_molar_mass
+    total_molar_mass = 0
+
     # Do the following for each inner list in the
     # compound symbol_quantity_list:
     for inner_list in symbol_quantity_list:
         # Separate the inner list into symbol and quantity.
-        symbol = symbol_quantity_list[SYMBOL_INDEX]
-        quantity = symbol_quantity_list[QUANTITY_INDEX]
+        symbol = inner_list[SYMBOL_INDEX]
+        quantity = inner_list[QUANTITY_INDEX]
 
         # Get the atomic mass for the symbol from the dictionary.
-        atomic_mass = periodic_table_dict[symbol[ATOMIC_MASS_INDEX]]
+        atomic_mass = periodic_table_dict[symbol][ATOMIC_MASS_INDEX]
 
         # Multiply the atomic mass by the quantity.
         molar_mass = atomic_mass * quantity
@@ -188,7 +193,7 @@ def compute_molar_mass(symbol_quantity_list, periodic_table_dict):
         total_molar_mass += molar_mass
 
         # Return the total molar mass.
-        return total_molar_mass
+    return total_molar_mass
 
 
 if __name__ == "__main__":
