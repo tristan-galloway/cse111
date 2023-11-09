@@ -1,6 +1,7 @@
-a = "one"
-b = "cat"
-c = "walks"
+names = ["alberta", "Ontario", "Prince Edward Island"]
 
-d = a + " " + b + " " + c
-print(d)
+print(names)
+
+names.pop(len(names) - 1)
+
+print(names)
