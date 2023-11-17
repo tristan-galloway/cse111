@@ -1,7 +1,6 @@
-names = ["alberta", "Ontario", "Prince Edward Island"]
+from datetime import datetime
 
-print(names)
-
-names.pop(len(names) - 1)
-
-print(names)
+# get current datetime
+dt = datetime.now()
+print('Datetime is:', dt)
+print('Weekday is:', dt.isoweekday())

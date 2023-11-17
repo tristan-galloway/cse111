@@ -12,7 +12,6 @@ def main():
 
     print(f"{efficiency} miles per gallon")
 
-
 def miles_per_gallon(start_miles, end_miles, amount_gallons):
     """Compute and return the average number of miles
     that a vehicle traveled per gallon of fuel.
