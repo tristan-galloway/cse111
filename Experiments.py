@@ -1,6 +1,5 @@
-from datetime import datetime
+phone = "340-0912"
 
-# get current datetime
-dt = datetime.now()
-print('Datetime is:', dt)
-print('Weekday is:', dt.isoweekday())
+new_phone = "208-" + phone
+
+print(new_phone)
