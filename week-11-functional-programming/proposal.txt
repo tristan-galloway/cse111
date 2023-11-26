@@ -1,0 +1,56 @@
+CSE 111 Proposal for a Student Chosen Program
+
+    (This is a proposal. All proposals are written with our best
+    knowledge at the beginning of a project. As we progress from the
+    beginning to the end of a project, we gain more knowledge, and we
+    change some of our proposed ideas. This is part of completing any
+    project and is fine.  However, we still must write a proposal so
+    that our teachers or supervisors know what we intend to do. Please
+    answer each of the following questions to the best of your
+    knowledge.)
+
+1. What is the title of your program?
+    Password Generator
+
+2. What real-world problem will your program address or help to solve?
+    People need secure passwords and ways to remember them. In my mission
+    we had missionaries that were constantly getting their accounts hacked
+    and stronger passwords can help with reducing account thieft by making
+    them more secure.
+
+3. What will you learn from developing this program?
+    I will learn better how to randomly generate and store values. I will
+    also be learning how to test functions that are random in nature.
+    If I have time I also want to learn how to encrypt the stored data. 
+
+4. What Python modules will your program use?
+    secrets
+    string
+    random
+
+5. Will you separate your Python program into functions that each
+perform a single task?
+
+    Yes. The goal will be to generate a number from 3 random words. For 
+    the project I will use random words from a list but could be adapted
+    to take user input. Either way the functions will take in words and 
+    return the random generated value.
+
+    (Remember that the most reusable functions don't get user input and
+    don't print results but instead have parameters and return a result.
+    Functions that get user input and print results are important and do
+    useful work but are not easily reusable.)
+
+    (Remember also that it's hard to test functions that get user input
+    and print results. It's easy to test functions that don't get user
+    input and don't print results but instead have parameters and return
+    a result. Therefore, you should write most of your program functions
+    to have parameters and return a result.)
+
+6. Will you write test functions to test at least two of your program
+functions?  
+
+    I should be able to. I plan to test the assembly and word generation
+    functions. I'm not sure how testing the random function will work, 
+    but I'm sure doing research and exploring it I can figure out things
+    I can test.
