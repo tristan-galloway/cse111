@@ -1,5 +1,15 @@
-phone = "340-0912"
+import tkinter as tk
 
-new_phone = "208-" + phone
+root = tk.Tk()
 
-print(new_phone)
+# Create a boolean variable
+var = tk.BooleanVar()
+
+# Create a checkbutton
+checkbutton = tk.Checkbutton(root, text="Check me", variable=var)
+
+# Pack the checkbutton
+checkbutton.pack()
+
+# Start the mainloop
+root.mainloop()

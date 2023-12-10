@@ -1,1 +1,16 @@
 https://www.geeksforgeeks.org/create-a-random-password-generator-using-python/
+Read through this link and copy and pasted it. After I modified it to fit my needs, I also corrected the error it had in which option 1. and 2. were switched. When 1 was selected it would add digits and when 2. was selected it would add letters.
+
+https://pythonexamples.org/python-append-character-to-end-of-string/
+Didn't like the method geeksforgeeks used in creating the password string so found a different way of doing it.
+
+gui.py homework
+Copy and pasted the gui and modified it to fit the need of a password generator.
+
+https://www.google.com/search?q=how+to+create+boolean+button+in+python+tkinter&sca_esv=589491028&rlz=1C1CHBD_enUS1053US1054&sxsrf=AM9HkKmlaZ2XpwkgKnjumMUQJOlpicBCFA%3A1702179221925&ei=lTF1ZbmCOLuF0PEPwqGssAM&ved=0ahUKEwj5oPfe94ODAxW7AjQIHcIQCzYQ4dUDCBA&uact=5&oq=how+to+create+boolean+button+in+python+tkinter&gs_lp=Egxnd3Mtd2l6LXNlcnAiLmhvdyB0byBjcmVhdGUgYm9vbGVhbiBidXR0b24gaW4gcHl0aG9uIHRraW50ZXIyCBAAGIAEGKIEMggQABiABBiiBDIIEAAYgAQYogRIp40BULFUWNWKAXADeAGQAQCYAcIBoAGUD6oBBDAuMTS4AQPIAQD4AQHCAgoQABhHGNYEGLADwgIGEAAYBxgewgIIEAAYCBgHGB7CAgsQABiABBiKBRiGA8ICChAhGKABGMMEGArCAggQIRigARjDBMICBBAhGAriAwQYACBBiAYBkAYI&sclient=gws-wiz-serp
+followed google AI instructions on how to create a generic checkbox and store the value in a variable. After that I looked at how the gui.py homework used the calculate function and applied the same concepts to the check boxes to replace the input() with a checkbox.
+
+fed ChatGPT my code and had it create test functions that used pytest and modified the code to fit the requirements for the assignment.
+
+https://www.google.com/search?q=how+to+create+a+button+to+copy+a+variable+to+clipboard+in+python+using+tkinter&sca_esv=589491028&rlz=1C1CHBD_enUS1053US1054&sxsrf=AM9HkKnL9rXdhbRTXNNEFxkXkqCjTzmUgQ%3A1702179274482&ei=yjF1ZZf4HKaj0PEPo9i-cA&ved=0ahUKEwiXhf_394ODAxWmETQIHSOsDw4Q4dUDCBA&uact=5&oq=how+to+create+a+button+to+copy+a+variable+to+clipboard+in+python+using+tkinter&gs_lp=Egxnd3Mtd2l6LXNlcnAiTmhvdyB0byBjcmVhdGUgYSBidXR0b24gdG8gY29weSBhIHZhcmlhYmxlIHRvIGNsaXBib2FyZCBpbiBweXRob24gdXNpbmcgdGtpbnRlckj4Q1CNCljOQ3ADeAGQAQCYAdwBoAHxEqoBBjAuMTYuMbgBA8gBAPgBAcICChAAGEcY1gQYsAPCAgcQIxixAhgnwgILEAAYgAQYigUYkQLCAgcQABiABBgKwgIGEAAYFhgewgIEECMYJ8ICBRAAGIAEwgIKEAAYgAQYFBiHAuIDBBgAIEGIBgGQBgg&sclient=gws-wiz-serp
+Googled how to create a copy value button in tkinter to copy the generated password, then tried to modify it to fit to program. I still can't figure out how to make it run
