@@ -48,6 +48,7 @@ def test_generate_password(mock_tkinter):
 
         # Get the generated password from the label
         password_label = frm_main.children['!lbl_password_gen']  # Replace 'label2' with the actual label name
+        password_label = frm_main.children['!lbl_password_gen']
         generated_password = password_label.cget("text")
 
         # Assert statements to test the generated password
@@ -66,6 +67,7 @@ def test_clear(mock_tkinter):
 
         # Get the password label text after clearing
         password_label = frm_main.children['!lbl_password_gen']  # Replace 'label2' with the actual label name
+        password_label = frm_main.children['!lbl_password_gen']
         cleared_password = password_label.cget("text")
 
         # Assert statements to test clearing
@@ -73,3 +75,4 @@ def test_clear(mock_tkinter):
         assert frm_main.children['!ent_password_length'].get() == ""  # Assuming entry widget ID is '!entry'
 
 # Add more test cases for other functions as needed
+        assert frm_main.children['!ent_password_length'].get() == ""
